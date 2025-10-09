@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPS SaludVida - Inicio</title>
+    <title>IPS SaludVida - Especialistas</title>
     <style>
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -60,7 +60,7 @@
             padding: 3rem 1.5rem;
         }
 
-        .hero {
+        .specialists-section {
             text-align: center;
             padding: 3rem 1rem;
             background-color: #ffffff;
@@ -68,40 +68,28 @@
             margin-bottom: 3rem;
         }
 
-        .hero h2 {
+        .specialists-section h2 {
             font-size: 2rem;
             color: #141f53;
             margin-bottom: 1rem;
         }
 
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-        }
-
-        .info-section {
-            display: grid;
-            gap: 2rem;
-        }
-
-        .info-card {
-            background-color: #ffffff;
+        .specialist-card {
+            background-color: #e9ecef;
             padding: 2rem;
-            border-radius: 10px;
+            border-radius: 5px;
+            margin: 1rem 0;
         }
 
-        .info-card h3 {
-            color: #141f53;
+        .specialist-card h3 {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            color: #141f53;
+            margin-bottom: 0.5rem;
+        }
+
+        .specialist-card p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
         }
 
         footer {
@@ -118,11 +106,11 @@
                 gap: 1rem;
             }
 
-            .hero h2 {
+            .specialists-section h2 {
                 font-size: 1.5rem;
             }
 
-            .info-card {
+            .specialist-card {
                 padding: 1.5rem;
             }
         }
@@ -145,26 +133,33 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Bienvenidos a IPS SaludVida</h2>
-            <p>Tu salud es nuestra prioridad. Ofrecemos atención médica de calidad con profesionales altamente calificados.</p>
-            <img src="https://images.steamusercontent.com/ugc/787485551412719502/C24F65F3F19170462091421A3A7BC17E03269AFE/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="IPS SaludVida">
-        </section>
-
-        <section class="info-section">
-            <h2>Sobre Nosotros</h2>
-            <article class="info-card">
-                <h3>Nuestra Historia</h3>
-                <p>IPS SaludVida fue fundada en 2010 con un sueño audaz: transformar la atención médica en nuestra región, llevando servicios de salud de alta calidad a cada rincón de la comunidad. Iniciamos como una pequeña clínica con un equipo de médicos y enfermeras apasionados por el bienestar de sus pacientes.</p>
-            </article>
-            <article class="info-card">
-                <h3>Misión</h3>
-                <p>En IPS SaludVida, nuestra misión es proporcionar servicios de salud accesibles, innovadores y centrados en el paciente. Nos esforzamos por promover el bienestar integral, combinando la experiencia médica con un trato humano y empático.</p>
-            </article>
-            <article class="info-card">
-                <h3>Visión</h3>
-                <p>Nuestra visión es convertirnos en la IPS líder en innovación y satisfacción del paciente para el año 2030. Aspiramos a ser un modelo de excelencia en la atención médica, integrando las últimas tecnologías, como la telemedicina y los sistemas de diagnóstico avanzados, para ofrecer soluciones ágiles y efectivas.</p>
-            </article>
+        <section class="specialists-section">
+            <h2>Nuestros Especialistas</h2>
+            <div class="specialist-card">
+                <h3>Dr. Juan Pérez</h3>
+                <p>Cardiólogo - 15 años de experiencia</p>
+                <p>Especialista en enfermedades cardiovasculares, con enfoque en diagnóstico por imagen y tratamientos mínimamente invasivos. Apasionado por la prevención de enfermedades cardíacas.</p>
+            </div>
+            <div class="specialist-card">
+                <h3>Dra. María Gómez</h3>
+                <p>Pediatra - Especialista en neonatología</p>
+                <p>Experta en el cuidado de recién nacidos y niños, con formación en atención de prematurez y desarrollo infantil. Comprometida con la salud integral de los más pequeños.</p>
+            </div>
+            <div class="specialist-card">
+                <h3>Dr. Carlos López</h3>
+                <p>Ginecólogo - 10 años de experiencia</p>
+                <p>Especializado en salud reproductiva femenina, con experiencia en procedimientos quirúrgicos y atención prenatal. Dedicado a brindar un trato empático y personalizado.</p>
+            </div>
+            <div class="specialist-card">
+                <h3>Dra. Ana Rodríguez</h3>
+                <p>Odontóloga - 8 años de experiencia</p>
+                <p>Especialista en odontología estética y restauradora, con formación en ortodoncia y blanqueamiento dental. Comprometida con la salud bucal y la satisfacción del paciente.</p>
+            </div>
+            <div class="specialist-card">
+                <h3>Dr. Luis Martínez</h3>
+                <p>Endocrinólogo - 12 años de experiencia</p>
+                <p>Experto en trastornos hormonales y metabólicos, como diabetes y enfermedades tiroideas. Enfocado en tratamientos personalizados para mejorar la calidad de vida.</p>
+            </div>
         </section>
     </main>
 

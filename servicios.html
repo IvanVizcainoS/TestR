@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPS SaludVida - Inicio</title>
+    <title>IPS SaludVida - Servicios</title>
     <style>
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -60,7 +60,7 @@
             padding: 3rem 1.5rem;
         }
 
-        .hero {
+        .services-section {
             text-align: center;
             padding: 3rem 1rem;
             background-color: #ffffff;
@@ -68,40 +68,51 @@
             margin-bottom: 3rem;
         }
 
-        .hero h2 {
+        .services-section h2 {
             font-size: 2rem;
             color: #141f53;
             margin-bottom: 1rem;
         }
 
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-        }
-
-        .info-section {
+        .services-list {
+            list-style: none;
+            padding: 0;
             display: grid;
-            gap: 2rem;
+            gap: 1rem;
         }
 
-        .info-card {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
+        .services-list li {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 5px;
         }
 
-        .info-card h3 {
-            color: #141f53;
+        .services-list li a {
+            color: #333;
+            text-decoration: none;
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-weight: 600;
+            display: block;
+        }
+
+        .services-list li a:hover {
+            background-color: #d3d6db;
+        }
+
+        .services-list img {
+            width: 250px;
+            height: 187.5px;
+            margin: 0.5rem auto 1rem;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .services-section img.banner {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 8px;
         }
 
         footer {
@@ -118,12 +129,17 @@
                 gap: 1rem;
             }
 
-            .hero h2 {
+            .services-section h2 {
                 font-size: 1.5rem;
             }
 
-            .info-card {
-                padding: 1.5rem;
+            .services-list li a {
+                font-size: 1.2rem;
+            }
+
+            .services-list img {
+                width: 200px;
+                height: 150px;
             }
         }
     </style>
@@ -145,26 +161,21 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Bienvenidos a IPS SaludVida</h2>
-            <p>Tu salud es nuestra prioridad. Ofrecemos atención médica de calidad con profesionales altamente calificados.</p>
-            <img src="https://images.steamusercontent.com/ugc/787485551412719502/C24F65F3F19170462091421A3A7BC17E03269AFE/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="IPS SaludVida">
-        </section>
-
-        <section class="info-section">
-            <h2>Sobre Nosotros</h2>
-            <article class="info-card">
-                <h3>Nuestra Historia</h3>
-                <p>IPS SaludVida fue fundada en 2010 con un sueño audaz: transformar la atención médica en nuestra región, llevando servicios de salud de alta calidad a cada rincón de la comunidad. Iniciamos como una pequeña clínica con un equipo de médicos y enfermeras apasionados por el bienestar de sus pacientes.</p>
-            </article>
-            <article class="info-card">
-                <h3>Misión</h3>
-                <p>En IPS SaludVida, nuestra misión es proporcionar servicios de salud accesibles, innovadores y centrados en el paciente. Nos esforzamos por promover el bienestar integral, combinando la experiencia médica con un trato humano y empático.</p>
-            </article>
-            <article class="info-card">
-                <h3>Visión</h3>
-                <p>Nuestra visión es convertirnos en la IPS líder en innovación y satisfacción del paciente para el año 2030. Aspiramos a ser un modelo de excelencia en la atención médica, integrando las últimas tecnologías, como la telemedicina y los sistemas de diagnóstico avanzados, para ofrecer soluciones ágiles y efectivas.</p>
-            </article>
+        <section class="services-section">
+            <h2>Nuestros Servicios</h2>
+            <ul class="services-list">
+                <li><a href="citas.html">Medicina General</a></li>
+                <img src="https://magnetosur.com/wp-content/uploads/2021/11/Que-diferencias-existen-entre-la-medicina-general-y-la-medicina-interna.jpg" alt="Medicina General">
+                <li><a href="citas.html">Pediatría</a></li>
+                <img src="https://media.istockphoto.com/id/2165367570/es/vector/estetoscopio-y-beb%C3%A9-servicios-de-salud-pedi%C3%A1trica-atenci%C3%B3n-m%C3%A9dica-a-ni%C3%B1os-y-j%C3%B3venes.jpg?s=612x612&w=0&k=20&c=5AAhiT6nfPiuN-K9YMKwGispfN-2sgVd6-D78e_xYlI=" alt="Pediatría">
+                <li><a href="citas.html">Cardiología</a></li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgZFF98cmtfQYjbFv3bFtbVS2GlaJ4EPSvw&s" alt="Cardiología">
+                <li><a href="citas.html">Odontología</a></li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRBllP0ewgdFIGMnA4fhWk7_7yxWBTUroM2w&s" alt="Odontología">
+                <li><a href="citas.html">Laboratorio Clínico</a></li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuAHGILxmr1An_jXYTi2iVEmoX1BNbpPEkrQ&s" alt="Laboratorio Clínico">
+            </ul>
+            <img class="banner" src="https://via.placeholder.com/600x300?text=Servicios+Médicos" alt="Servicios médicos">
         </section>
     </main>
 
